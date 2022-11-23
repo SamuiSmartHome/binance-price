@@ -15,8 +15,7 @@ def round_value(input_value):
     if input_value.values > 1:
         a = float(round(input_value, 2))
     else:
-        a = float(round(input_value, 8))
-    df.refresh()    
+        a = float(round(input_value, 8)) 
     return a
 
 col1, col2, col3 = st.columns(3)
