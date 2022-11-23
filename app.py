@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import time
 
 st.markdown('''# **Binance Price App**
 A simple cryptocurrency price app pulling price data from *Binance API*.
@@ -80,7 +79,6 @@ col3.metric(col9_selection, col9_price, col9_percent)
 st.header('**All Price**')
 st.dataframe(df)
 
-time.sleep(5)
 st.info('Credit: Modifed by Sun (aka [SunSamui](https://www.youtube.com/playlist?list=PLNhIISiOZn7XM3thB5YnjRJ-mp_cRMGTl))')
 
 st.markdown("""
