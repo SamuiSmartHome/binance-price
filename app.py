@@ -16,6 +16,7 @@ def round_value(input_value):
         a = float(round(input_value, 2))
     else:
         a = float(round(input_value, 8))
+    df.refresh()    
     return a
 
 col1, col2, col3 = st.columns(3)
@@ -78,6 +79,7 @@ col3.metric(col9_selection, col9_price, col9_percent)
 st.header('**All Price**')
 st.dataframe(df)
 
+time.sleep(5)
 st.info('Credit: Modifed by Sun (aka [SunSamui](https://www.youtube.com/playlist?list=PLNhIISiOZn7XM3thB5YnjRJ-mp_cRMGTl))')
 
 st.markdown("""
